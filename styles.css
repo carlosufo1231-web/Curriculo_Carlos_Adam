@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f4f8;
+    color: #273444;
+    line-height: 1.55;
+    padding: 32px 18px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #dfe5ec;
+    border-radius: 8px;
+    box-shadow: 0 8px 26px rgba(27, 45, 67, 0.08);
+    overflow: hidden;
+}
+
+.header {
+    padding: 32px 40px 24px;
+    background: #f5f8fb;
+    border-bottom: 3px solid #2d7180;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    margin-bottom: 6px;
+    line-height: 1.2;
+    color: #18324b;
+}
+
+.header .subtitle {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #2d7180;
+    margin-bottom: 17px;
+}
+
+.header .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    font-size: 0.88rem;
+    color: #3d4c5c;
+}
+
+.header .contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    background: #ffffff;
+    border: 1px solid #dce4eb;
+    border-radius: 4px;
+}
+
+.header .contact-info .icon {
+    display: none;
+}
+
+.body-content {
+    padding: 30px 40px 38px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}
+
+.section-title {
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: #18324b;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    padding: 0 0 7px 11px;
+    border-bottom: 1px solid #dce4eb;
+    border-left: 3px solid #2d7180;
+    margin-bottom: 13px;
+    display: block;
+}
+
+.section-title .title-icon {
+    display: none;
+}
+
+.resumo p {
+    font-size: 0.95rem;
+    color: #3d4c5c;
+    text-align: left;
+}
+
+.resumo p + p {
+    margin-top: 10px;
+}
+
+.resumo .highlight {
+    color: #18324b;
+    font-weight: 700;
+}
+
+.formacao-item {
+    margin-bottom: 14px;
+}
+
+.formacao-item + .formacao-item {
+    margin-top: 20px;
+}
+
+.formacao-item:last-child {
+    margin-bottom: 0;
+}
+
+.formacao-item h3 {
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: #18324b;
+    margin-bottom: 2px;
+}
+
+.formacao-item .instituicao {
+    font-size: 0.9rem;
+    color: #526170;
+    font-style: normal;
+}
+
+.formacao-item .periodo {
+    font-size: 0.86rem;
+    color: #697887;
+    margin-top: 2px;
+}
+
+.cursos-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px 24px;
+    list-style: disc;
+    margin: 8px 0 0 20px;
+}
+
+.cursos-lista li {
+    font-size: 0.9rem;
+    color: #3d4c5c;
+    padding: 2px 0;
+}
+
+.cursos-lista .carga {
+    color: #697887;
+    font-size: 0.84rem;
+    font-weight: 400;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.skill-category {
+    padding: 15px 16px;
+    background: #f7f9fb;
+    border: 1px solid #e3e9ef;
+    border-radius: 5px;
+}
+
+.skill-category h3 {
+    font-size: 0.96rem;
+    font-weight: 700;
+    color: #2d7180;
+    margin-bottom: 7px;
+}
+
+.skill-category ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.skill-category ul li {
+    font-size: 0.88rem;
+    color: #3d4c5c;
+    padding: 2px 0;
+}
+
+.objetivo-box {
+    background: #f3f7f9;
+    border-left: 3px solid #2d7180;
+    padding: 13px 16px;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.94rem;
+    color: #3d4c5c;
+}
+
+.objetivo-box strong {
+    color: #18324b;
+}
+
+.diferenciais-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.diferenciais-lista li {
+    position: relative;
+    padding: 5px 0 5px 19px;
+    font-size: 0.92rem;
+    color: #3d4c5c;
+}
+
+.diferenciais-lista li::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    background: #2d7180;
+    border-radius: 50%;
+}
+
+.diferenciais-lista li strong {
+    color: #18324b;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 14px 10px;
+    }
+
+    .container {
+        border-radius: 6px;
+    }
+
+    .header {
+        padding: 25px 22px 20px;
+    }
+
+    .header h1 {
+        font-size: 1.55rem;
+    }
+
+    .header .subtitle {
+        font-size: 0.98rem;
+    }
+
+    .header .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .body-content {
+        padding: 24px 22px 28px;
+    }
+
+    .cursos-lista,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    @page {
+        margin: 1.5cm;
+    }
+
+    body {
+        background: #ffffff;
+        padding: 0;
+        font-size: 10.5pt;
+    }
+
+    .container {
+        max-width: none;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        overflow: visible;
+    }
+
+    .header {
+        padding: 0 0 16px;
+        background: #ffffff;
+        border-bottom: 2px solid #18324b;
+    }
+
+    .header .contact-info span,
+    .skill-category {
+        background: #ffffff;
+    }
+
+    .body-content {
+        padding: 22px 0 0;
+    }
+
+    .section,
+    .formacao-item,
+    .skill-category {
+        break-inside: avoid;
+    }
+}
